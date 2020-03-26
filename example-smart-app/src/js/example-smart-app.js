@@ -27,7 +27,7 @@
         $.when(pt, obv).done(function(patient, obv) {
           
           var mrn = patient.identifier.filter(function (x) { return x.type.text.toUpperCase() === 'MRN'; })[0].value;
-          window.location = 'https://idp-dev.healthviewanalytics.com/account/login?returnUrl=http%3A%2F%2Fembeddedanalytics-dev.healthviewanalytics.com%3A3000%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=usercernersmartappoauth2';
+          window.location = 'https://idp-dev.healthviewanalytics.com/account/login?returnUrl=https%3A%2F%2Fembeddedanalytics-dev.healthviewanalytics.com%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=usercernersmartappoauth2';
         });
       } else {
         onError();
