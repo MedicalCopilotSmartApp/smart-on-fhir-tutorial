@@ -15,6 +15,7 @@
         $.when(pt).fail(onError);
 
         $.when(pt).done(function(patient) {
+          var clientIdd = clientId;
           var mrn = patient.identifier.filter(function (x) { return x.type.text.toUpperCase() === 'MRN'; })[0].value;
           window.location = 'https://idp-dev.healthviewanalytics.com/account/login?returnUrl=https%3A%2F%2Fembeddedanalytics-dev.healthviewanalytics.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=usercernersmartappoauth2';
         });
