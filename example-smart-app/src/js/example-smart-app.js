@@ -23,6 +23,9 @@
           else if (clientId === 'f08c6f2c-1469-4805-98b0-0e2c14718fa1') {
             window.location = 'https://localhost:44379/account/login?returnUrl=http%3A%2F%2Flocalhost%3A3000%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=test1cernersmartappoauth2';
           }
+          else if (clientId === '4ed79774-438b-4c40-9a9d-7df67e2f92d0') {
+            window.location = 'https://medicalcopilot.dev.lumedx.com/medicalcopilotidp/account/login?returnUrl=https%3A%2F%2Fmedicalcopilot.dev.lumedx.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=testcernersmartappoauth2';  
+          }
         });
       } else {
         onError();
