@@ -26,6 +26,9 @@
           else if (clientId === '4ed79774-438b-4c40-9a9d-7df67e2f92d0') {
             window.location = 'https://medicalcopilot.dev.lumedx.com/medicalcopilotidp/account/login?returnUrl=https%3A%2F%2Fmedicalcopilot.dev.lumedx.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=testcernersmartappoauth2';  
           }
+          else if (clientId === 'ce726c87-2d1d-4824-9c4c-5e5598492a47') {
+            window.location = 'https://idp-test.healthviewanalytics.com/account/login?returnUrl=https%3A%2F%2Fembeddedanalytics-test.healthviewanalytics.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=cernersmartappoauth2';  
+          }
         });
       } else {
         onError();
