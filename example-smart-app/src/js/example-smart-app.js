@@ -34,7 +34,7 @@
               window.location = 'https://medicalcoint.dev.lumedx.com/medicalcopilotidp/account/login?returnUrl=https%3A%2F%2Fmedicalcoint.dev.lumedx.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=cernersmartappoauth2';
               break;
             case 'c34f0c65-d249-45f6-8b46-d979bad37bc5': // OnPrem Demo simulator Cerner App
-              window.location = 'https://blvmcdemo.dev.lumedx.com/medicalcopilotidp/account/login?returnUrl=https%3A%2F%2Fblvmcdemo.dev.lumedx.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=cernersmartappoauth2';
+              window.location = 'https://blvmcdemo.dev.lumedx.com/medicalcopilotidp/account/login?returnUrl=https%3A%2F%2Fblvmcdemo.dev.lumedx.com%2F%23%2Fpatient%2F' + mrn + '%2Frisk&user=portal&provider=democernersmartappoauth2';
               break;
           }          
         });
